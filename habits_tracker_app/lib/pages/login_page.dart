@@ -3,6 +3,7 @@ import 'package:habits_tracker_app/widgets/login_page/login_button.dart';
 import 'package:habits_tracker_app/widgets/login_page/password_field.dart';
 import 'package:habits_tracker_app/widgets/login_page/username_field.dart';
 import 'package:habits_tracker_app/widgets/login_page/welcome_message.dart';
+import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});

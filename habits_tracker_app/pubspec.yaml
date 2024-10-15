@@ -6,9 +6,12 @@ version: 0.1.0
 environment:
   sdk: ^3.5.1
 
+  
+
 dependencies:
   flutter:
     sdk: flutter
+  table_calendar: ^3.0.7
   flutter_localizations:
     sdk: flutter
   provider: ^6.1.2
