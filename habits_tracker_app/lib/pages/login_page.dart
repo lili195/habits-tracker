@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:habits_tracker_app/widgets/login_page/login_button.dart';
+import 'package:habits_tracker_app/widgets/login_page/password_field.dart';
+import 'package:habits_tracker_app/widgets/login_page/username_field.dart';
+import 'package:habits_tracker_app/widgets/login_page/welcome_message.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -25,20 +29,19 @@ class _LoginPageState extends State<LoginPage> {
                 const SizedBox(height: 30),
                 const UsernameField(), // Campo de usuario
                 const SizedBox(height: 20),
-                PasswordField(obscureText: _obscureText, onIconPressed: () {
-                  setState(() {
-                    _obscureText = !_obscureText; // Alternar visibilidad
-                  });
-                }),
+                PasswordField(
+                    obscureText: _obscureText,
+                    onIconPressed: () {
+                      setState(() {
+                        _obscureText = !_obscureText; // Alternar visibilidad
+                      });
+                    }),
                 const SizedBox(height: 30),
                 LoginButton(onPressed: () {
                   // Lógica de login
                   Navigator.pushReplacementNamed(context, 'home');
                 }),
                 const SizedBox(height: 20),
-                RegisterButton(onPressed: () {
-                  Navigator.pushReplacementNamed(context, 'SingUp');
-                }),
               ],
             ),
           ),
@@ -47,4 +50,3 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 }
-
