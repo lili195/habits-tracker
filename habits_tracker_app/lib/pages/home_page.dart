@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:habits_tracker_app/models/habits.dart';
 import 'package:habits_tracker_app/pages/favorites_page.dart';
+import 'package:habits_tracker_app/pages/habitos_pages.dart';
 import 'package:habits_tracker_app/pages/user_page.dart';
 import 'package:habits_tracker_app/providers/ui_provider.dart';
 import 'package:habits_tracker_app/widgets/custom_fab_add_food.dart';
@@ -75,7 +76,7 @@ class _HomePageState extends State<HomePage> {
       case 1:
         return const FavoritesPage(); // Cambiar por tu página de gráficos
       case 2:
-        return const UserPage();
+        return const HabitosPage();
       default:
         return const Center(child: Text('Página no encontrada'));
     }
