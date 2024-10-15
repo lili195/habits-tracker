@@ -20,23 +20,19 @@ class _HomePageState extends State<HomePage> {
   List<Habits> categories = const [
     Habits(
       name: 'Escribir',
-      icon:
-          Icon(Icons.abc),
+      icon: Icon(Icons.abc),
     ),
     Habits(
       name: 'Leer',
-      icon:
-          Icon(Icons.book),
+      icon: Icon(Icons.book),
     ),
     Habits(
       name: 'Correr',
-      icon:
-          Icon(Icons.run_circle),
+      icon: Icon(Icons.run_circle),
     ),
     Habits(
       name: 'Jugar Baloncesto',
-      icon:
-          Icon(Icons.sports_basketball),
+      icon: Icon(Icons.sports_basketball),
     ),
   ];
 
@@ -58,6 +54,7 @@ class _HomePageState extends State<HomePage> {
       categories.add(newHabit);
     });
   }
+
   // Método para obtener el cuerpo dinámico basado en el índice de la navegación
   Widget _getBody(int currentIndex) {
     switch (currentIndex) {
@@ -65,18 +62,14 @@ class _HomePageState extends State<HomePage> {
         return Scaffold(
           appBar: AppBar(
             title: const Text('Aplicación de Hábitos'),
-            actions: [
-              IconButton(
-                icon: const Icon(Icons.notifications),
-                onPressed: () {},
-              ),
-            ],
           ),
         );
       case 1:
         return const FavoritesPage(); // Cambiar por tu página de gráficos
       case 2:
         return const HabitosPage();
+      case 3:
+        return const UserPage();
       default:
         return const Center(child: Text('Página no encontrada'));
     }

@@ -10,8 +10,6 @@ class HabitosPage extends StatefulWidget {
 
 class _HabitosPageState extends State<HabitosPage> {
   // Lista de categorías
-
-
   @override
   Widget build(BuildContext context) {
     final List<DateTime> fechasVerdes = [

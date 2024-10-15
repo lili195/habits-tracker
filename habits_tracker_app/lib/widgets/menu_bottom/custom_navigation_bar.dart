@@ -18,6 +18,8 @@ class CustomNavigationBar extends StatelessWidget {
           BottomNavigationBarItem(label: 'Inicio', icon: Icon(Icons.home)),
           BottomNavigationBarItem(
               label: 'Favoritos', icon: Icon(Icons.favorite)),
+          BottomNavigationBarItem(
+              label: 'Calendario', icon: Icon(Icons.calendar_month)),
           BottomNavigationBarItem(label: 'Usuario', icon: Icon(Icons.person)),
         ]);
   }
